@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --files index.ts",
+    "build": "tsc --project ./",
+    "prod": "tsc --project ./ && node ./build/index.js production"
   },
   "author": "",
   "license": "ISC",
@@ -30,7 +33,7 @@
     "@types/helmet": "^4.0.0",
     "@types/jsonwebtoken": "^9.0.2",
     "@types/lodash": "^4.14.195",
-    "@types/node": "^20.2.5",
+    "@types/node": "^20.2.6",
     "nodemon": "^2.0.22",
     "ts-node": "^10.9.1",
     "typescript": "^5.1.3"
