@@ -25,3 +25,5 @@ const handlerImage: any = Object.values(FOLDERS).reduce(
   },
   [express.static(path.join(dirNameWithEnv, `/${FOLDER_UPLOAD}`))]
 )
+
+app.use(`${R}`)
